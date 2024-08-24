@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Bilal | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Custom Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+</style>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Ahmad Bilal</a>
+            <div>
+                <a href="/index.html" class="text-lg mx-4">Home</a>
+                <a href="/aboutme.html" class="text-lg mx-4">About Me</a>
+                <a href="/projects.html" class="text-lg mx-4">Projects</a>
+                <a href="/contact.html" class="text-lg mx-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="contact" class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 animate-slide-up">Contact Me</h2>
+            <p class="text-lg mb-8 animate-fade-in">
+                Feel free to reach out to me at any time. Whether you have a question or just want to connect, 
+                I'll try my best to get back to you!
+            </p>
+            <div class="bg-gray-900 p-8 rounded-lg shadow-lg inline-block transition-transform transform hover:scale-105 animate-fade-in-up">
+                <h3 class="text-2xl font-bold mb-4">Email</h3>
+                <p class="text-pink-500 text-xl">
+                    <a href="mailto:ahmadbilal2125368@gmail.com">
+                        ahmadbilal2125368@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 p-4 text-center">
+        <p>&copy; 2024 Ahmad Bilal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

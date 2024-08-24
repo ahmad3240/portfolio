@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Bilal | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Custom Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+</style>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Ahmad Bilal</a>
+            <div>
+                <a href="/index.html" class="text-lg mx-4">Home</a>
+                <a href="/aboutme.html" class="text-lg mx-4">About Me</a>
+                <a href="/projects.html" class="text-lg mx-4">Projects</a>
+                <a href="/contact.html" class="text-lg mx-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        <div class="text-center">
+            <div class="w-48 h-48 rounded-full overflow-hidden mx-auto animate-bounce">
+                <img src="images/ahmad.jpg" alt="Ahmad Bilal" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl font-bold mt-6 animate-fade-in">Welcome to My Portfolio</h1>
+            <p class="mt-4 text-xl">I'm a Web Developer with a passion for creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 animate-fade-in">About Me</h2>
+            <p class="text-xl leading-relaxed mb-6 animate-slide-up">
+                I am Ahmad Bilal, a web developer with a strong background in computer science. I specialize in building responsive and dynamic websites using modern web technologies.
+            </p>
+            <p class="text-xl leading-relaxed animate-slide-up">
+                I have a BS in Computer Science and extensive experience in creating applications that are not only functional but also visually appealing. My skills include React.js, Node.js, Express.js, and blockchain technologies like Ethereum and Solidity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center">
+        <p>&copy; 2024 Ahmad Bilal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

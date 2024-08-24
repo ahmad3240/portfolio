@@ -1,0 +1,96 @@
+/* Custom Animations */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Hide elements before they are in view */
+.animate-slide-up, .animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Apply animation when elements come into view */
+.in-view.animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.in-view.animate-slide-up {
+    animation: slideUp 1.5s ease-out forwards;
+}
+/* Hyperlink Hover Animation */
+a {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* White underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a:hover {
+    color: #ff4d94; /* Change color on hover */
+}
+
+
+
+
+/* Apply the Poppins font to the whole body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1.5s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
